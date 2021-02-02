@@ -17,11 +17,9 @@ response = table.get_item(
 result = response["Item"]
 status = response["ResponseMetadata"]["HTTPStatusCode"]
 print("Status code", status)
-print("Successfully updated retrieved data from DynamoDB")
+print("Successfully retrieved data from DynamoDB")
 
 print(result)
 
 mail=result['mail']
 print(mail)
-
-
